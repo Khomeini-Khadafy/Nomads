@@ -9,5 +9,5 @@ Route::get('/', function () {
 });
 
 Route::prefix('admin')->group(function() {
-        Route::get('/', [DashboardController::class, 'index'])->name('Admin');
+        Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     });
